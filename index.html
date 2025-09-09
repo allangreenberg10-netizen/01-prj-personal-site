@@ -6,6 +6,113 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Simple navigation bar with links to each section -->
+    <ul class="navbar">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#extracurriculars">Extracurriculars</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section as a banner with water image background -->
+  <section id="hero" class="hero-banner">
+    <!-- Overlay for text visibility -->
+    <div class="hero-overlay"></div>
+    <!-- Centered circle-user icon using SVG -->
+    <div class="hero-icon">
+      <!-- Simple SVG for a user in a circle -->
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="38" stroke="#2563eb" stroke-width="4" fill="#e0f2fe" />
+        <circle cx="40" cy="34" r="14" fill="#38bdf8" />
+        <ellipse cx="40" cy="60" rx="18" ry="10" fill="#22d3ee" />
+      </svg>
+    </div>
+    <h1>Welcome to Allan Greenberg's Site</h1>
+    <p>Showcasing my journey in web development</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <!-- Write a short introduction about yourself here -->
+    <h2>About Me</h2>
+    <p>Hello! I'm Allan Greenberg and I'm reinveting myself by learning new skills. I'm focusing on technology and media outlets. I have extensive experience in the medical device industry and I'm looking for ways to improve patient outcomes through technology.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <!-- List your skills here, in a row without bullet points -->
+    <h2>Skills</h2>
+    <div class="skills-row">
+      <div class="skill-item">
+        <!-- HTML icon: code bracket, larger size -->
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <polyline points="18,12 8,24 18,36" stroke="#14213d" stroke-width="3" fill="none"/>
+          <polyline points="30,12 40,24 30,36" stroke="#14213d" stroke-width="3" fill="none"/>
+        </svg>
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <!-- CSS icon: paint palette, larger size -->
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <!-- Palette base -->
+          <ellipse cx="24" cy="30" rx="16" ry="12" fill="#fff" stroke="#14213d" stroke-width="3"/>
+          <!-- Paint spots -->
+          <circle cx="16" cy="30" r="2.5" fill="#fca311"/>
+          <circle cx="24" cy="24" r="2.5" fill="#14213d"/>
+          <circle cx="32" cy="30" r="2.5" fill="#fca311"/>
+          <circle cx="24" cy="36" r="2.5" fill="#14213d"/>
+        </svg>
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <!-- Sales icon (no highlight, larger size) -->
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="12" fill="#fca311"/>
+          <text x="24" y="32" text-anchor="middle" fill="#14213d" font-size="18" font-family="Montserrat, Arial" font-weight="bold">$</text>
+        </svg>
+        <span>Sales</span>
+      </div>
+      <div class="skill-item">
+        <!-- Consulting icon: speech bubble, larger size -->
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <ellipse cx="24" cy="24" rx="16" ry="12" fill="#fff" stroke="#14213d" stroke-width="3"/>
+          <rect x="18" y="32" width="12" height="6" rx="3" fill="#fca311"/>
+          <text x="24" y="26" text-anchor="middle" fill="#14213d" font-size="12" font-family="Montserrat, Arial" font-weight="bold">?</text>
+        </svg>
+        <span>Consulting</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extracurriculars Section -->
+  <section id="extracurriculars">
+    <!-- Each activity is in its own box with a heading and description -->
+    <h2>Extracurriculars</h2>
+    <div class="extracurriculars-boxes">
+      <div class="activity-box">
+        <h3>Boating</h3>
+        <p>I enjoy boating in the summer and watersports.</p>
+      </div>
+      <div class="activity-box">
+        <h3>Cars</h3>
+        <p>I enjoy working on classic cars and learning about automotive technology.</p>
+      </div>
+      <div class="activity-box">
+        <h3>Volunteering</h3>
+        <p>I organize multiple medical mission trips a year focusing on underserved areas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <!-- Add your contact information here -->
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:allangreenberg10@gmail.com">allangreenberg10@gmail.com</a></p>
+  </section>
 </body>
 </html>

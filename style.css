@@ -1,1 +1,217 @@
 /* Add you CSS here */
+
+/* Use a modern, inviting font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  /* Center everything vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif;
+  /* Deep navy blue background */
+  background: #1a2540;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  /* Add top padding so content is not hidden behind navbar */
+  padding-top: 56px;
+}
+
+/* Navigation bar styles */
+nav {
+  width: 100%;
+  background: #14213d; /* Navy blue */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+}
+
+.navbar li {
+  margin: 0 18px;
+}
+
+.navbar a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #fca311; /* Gold accent on hover */
+}
+
+/* Style for all sections */
+section {
+  /* Center section content */
+  text-align: center;
+  max-width: 700px;
+  margin: 24px 0;
+  background: #f8fafc; /* Softer, warmer white */
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(26, 37, 64, 0.10); /* Navy shadow */
+  padding: 40px 28px;
+  transition: box-shadow 0.2s;
+}
+
+h1, h2 {
+  /* Navy blue for headings */
+  color: #14213d;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.7em;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #fca311; /* Gold accent for section headings */
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+.skills-row {
+  /* Display skills in a row */
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* Space between skills */
+  margin-top: 12px;
+}
+.skills-row span {
+  background: #14213d; /* Navy blue for all skill tags */
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1em;
+  box-shadow: 0 2px 8px rgba(26, 37, 64, 0.10);
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-item span {
+  margin-top: 16px; /* Increase space between icon and word */
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Style links in contact section */
+a {
+  color: #fca311; /* Gold accent for links */
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add a subtle hover effect to sections */
+section:hover {
+  box-shadow: 0 8px 32px rgba(26, 37, 64, 0.18);
+}
+
+/* Hero banner styles */
+.hero-banner {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  /* Water image background */
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center center/cover no-repeat;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(26, 37, 64, 0.10);
+  border-radius: 0 0 24px 24px;
+  padding: 48px 0 36px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay to make text readable on image */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 37, 64, 0.45); /* Lighter navy overlay */
+  z-index: 1;
+}
+
+.hero-icon, .hero-banner h1, .hero-banner p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-banner h1 {
+  color: #fff;
+  font-size: 2.7em;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.hero-banner p {
+  color: #f5f6fa;
+  font-size: 1.2em;
+}
+
+/* Extracurricular activities styles */
+.extracurriculars-boxes {
+  /* Display activity boxes in a row */
+  display: flex;
+  flex-direction: row; /* Always in a row */
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.activity-box {
+  /* Consistent light gray for all boxes */
+  background: #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(26, 37, 64, 0.10);
+  padding: 24px 18px;
+  width: 220px;
+  text-align: center;
+}
+
+.activity-box h3 {
+  color: #14213d;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2em;
+}
+
+.activity-box p {
+  color: #222;
+  font-size: 1em;
+  margin: 0;
+}
